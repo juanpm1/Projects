@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    scrollbar-width:thin ;
+    scrollbar-color: rgb(21, 21, 21) rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(21, 21, 21);
+    border-radius: 20px;
+}
+  
+.nav-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #212121;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+
+#nav-container__h1{
+    margin-left: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+#nav-container__a-about, #nav-container__a-inspiration{
+    position: absolute;
+    right: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#nav-container__a-inspiration{
+    right: 200px;
+}
+
+#nav-container__a-about:hover, #nav-container__a-inspiration:hover{
+    color: rgb(225, 225, 225);
+}
+
+#nav-container__audio-btn{
+    position: absolute;
+    right: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+#audio-btn__audio-icon{
+    width: 24px;
+}
+
+.bonsai-container{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    border-radius: 5px;
+}
+
+#bonsai-img{
+    justify-self: flex-start;
+}
+
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+#welcome-title{
+    margin: 0;
+    font-size: 40px;
+}
+
+#welcome-description{
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 200px;
+}
+
+#scroll-btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation-name:up-and-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    z-index: 10;
+}
+
+#arrow-down{
+    width: 100px;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    width: 100%;
+    box-shadow: inset 0 0 30px 10px rgb(255, 255, 255);
+    background: rgb(230, 230, 230);
+}
+
+#about-description{
+    display: inline-block;
+    font-size: 20px;
+    padding: 50px 3vw;
+    padding-right: 0;
+    color: rgb(0, 0, 0);
+    width: 60%;
+}
+
+#about-img{
+    padding: 0 9vw;
+    width: 350px;
+    animation-name: increase-size;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.cloud-container{
+    position: relative;
+    margin-top: 170px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cloud{
+    position: absolute;
+    width: 80%
+}
+
+#random-quote-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: -50px;
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 0 rgb(176, 176, 176);
+}
+
+
+.random-text{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+}
+
+.random-btn{
+    position: absolute;
+    bottom: 30px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: #c5d1f9;
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.random-btn:hover{
+    background: #bcbff4;
+}
+
+.random-btn:active{
+    background: #a7a2e6;
+    color: rgb(255, 255, 255);
+}
+
+.footer{
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: #212121;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes increase-size {
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes up-and-down {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 7px;
+    }       
+    100%{
+        bottom: 0;
+    }
+}

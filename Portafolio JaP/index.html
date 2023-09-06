@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Mainé | Junior front-end developer</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="fondo_mosaico"></div>
+    <nav class="navegador">
+        <div id="fondo_plantillaweb"></div>
+        <div id="barra_superior"></div>
+        <div id="background_notebook"></div>
+        <div id="contenido_notebook"></div>
+        <div id="notebook"></div>
+        <a href="https://jovenesaprogramar.edu.uy/"><img src="logo pagina.png" alt="" id="logo_pagina"></a>
+        <a href="#enviar"><h3 id="contacto">Contacto</h3></a>
+        <h1 id="titulo_principal">Juan Mainé Junior front-end developer</h1>
+    </nav>
+    
+        
+
+    <p class="sobremi">
+        Soy un junior front-end developer, actualmente 
+        continuo estudiando y ampliando mis 
+        conocimientos con experiencias y de manera 
+        autodidacta. Por el momento estoy cursando el programa
+        Jovenes a Programar de Ceibal, pero planeo seguir formandome 
+        en el futuro.
+    </p>
+    <p class="habilidades">
+        Conocimientos en <strong>HTML 5</strong>, <strong>CSS</strong>, y <strong>Java Script</strong>. Ademas cuento con 
+        facilidad para el uso de programas tales como <strong>Paquete Office</strong>, <strong>Photoshop</strong>, y <strong>redes sociales</strong> en general.
+    </p>
+    <p class="habilidades_personales">
+        - Nivel avanzado de ingles.<br>
+        - Facilidad para aprender tareas nuevas.<br>
+        - Buena capacidad de comuncación.<br>
+        - Responsable.<br>
+    </p>
+
+    <div class="fondo_experiencias"></div>
+    <strong id="titulo_experiencias">Experiencia Laboral</strong><br>
+    <p class="experiencias">
+
+        <strong>Microsoft</strong><br>
+        Desarrollador junior front-end <br>
+        Noviembre 2021 | Mayo 2022
+        <br>
+        <br>
+        <br>
+        <strong>Nasa</strong><br>
+        Diseñador front-end <br>
+        Junio 2022 | Diciembre 2023 <br>
+    </p>
+    </div>
+    <form class="formulario">
+        <h1 id="contactar">Contactar</h1>
+        <label for="De" class="texto_formulario">De:</label><input id="De" class="rellenar_formularios" type="text" name="De" placeholder="Nombre y apellido" required><br>
+        <label for="tematica" class="texto_formulario">Temática:</label>
+          <select class="rellenar_formularios" id="seleccion" required>
+            <option value="-- Elige un tema--">-- Elige un tema--</option>
+            <option value="Consulta">Consulta</option>
+            <option value="Propuesta">Propuesta</option>
+            <option value="Reporte">Reporte</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <br>
+          <label for="Asunto" class="texto_formulario">Asunto:</label><input id="asunto" type="text" name="Asunto" class="rellenar_formularios" required><br>
+          <label for="Cuerpo" class="texto_formulario">Mensaje:</label><input type="text" class="rellenar_formularios" id="cuerpo" name="Cuerpo" minlength="10" required>
+          <label for="Enviar" class="texto_formulario"></label><input type="submit" value="Enviar" id="enviar">
+    </form>
+</body>
+</html> 
