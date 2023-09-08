@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    background: rgb(44, 66, 106);
+}
+
+.flex-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.waves{
+    position: fixed;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    z-index: -2;
+}
+
+.title {
+    position: fixed;
+    box-sizing: border-box;
+    top: 20px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    border-right: 4px solid rgb(137, 137, 137);
+    width: 400px;
+    animation: typing 2s steps(12), blink .5s infinite
+    step-end alternate;
+    overflow: hidden;
+    font-size: 50px;
+    text-shadow: 5px 1px 0px rgba(24,33,49,0.7);
+    color: white;
+    z-index: -1;
+}
+
+.background-svg-1{
+    position: fixed;
+    bottom: 0;
+    width: 150px;
+    padding: 60px;
+    opacity: 0.6;
+}
+
+.background-svg-2{
+    position: fixed;
+    width: 300px;
+    top: 0;
+    padding: 300px;
+    opacity: 0.4;
+}
+
+.background-svg-3{
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    padding-right: 500px;
+    width: 300px;
+    opacity: 0.7;
+}
+
+.background-svg-4{
+    position: fixed;
+    top: 75px;
+    right: 0;
+    width: 500px;
+    opacity: 0.3;
+    z-index: -3;
+}
+
+.login-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -7px 0px 0px rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 600px;
+    height: 500px;
+    background: #182131;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    z-index: 10;
+}
+
+.login-container__p{
+    font-size: 35px;
+    cursor: default;
+}
+
+.login-container__email, .login-container__password{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 5px;
+}
+
+.login-container__email:focus, .login-container__password:focus{
+    background: #a9a9aa;
+    border-color: #a9a9aa;
+}
+
+.login-container__email::placeholder, .login-container__password::placeholder{
+    font-size: 15px;
+    color: #182131;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-container__password{
+    margin-bottom: 5px;
+}
+
+.login-container__label{
+    font-size: 20px;
+}
+
+.submit-container{
+    text-align: center;
+}
+
+.login-container__submit-btn{
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(77,175,57,1) 0%, rgba(46,120,36,1) 100%);   
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login-container__submit-btn:hover{
+    background: linear-gradient(90deg, rgb(67, 157, 49) 0%, rgb(33, 89, 26) 100%);   
+    color: #3e3e3e;
+}   
+
+.login-container__submit-btn:active{
+    background: linear-gradient(90deg,rgb(36, 146, 26) 0%, rgb(26, 76, 14) 100%);   
+    color: rgb(0, 0, 0);
+}
+
+.login-container__a-forgot-password{
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.login-container__a-forgot-password:active{
+    color: #3e5277;
+}
+
+.login-container__email::selection, .login-container__password::selection{
+    background-color: #343e46;
+    color: white;
+}
+
+.login-container__email:focus, .login-container__password:focus{
+    outline: none;
+}
+
+
+.footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #182131;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer__span{
+    color:rgb(44, 66, 106);
+}
+
+@keyframes typing {
+    from{
+    width:0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .login-container{
+        width: 80%;
+        height: 70vh;
+        text-align: center;
+    }
+    .waves{
+        height: 250px;
+    }
+    .title{
+        width: 245px;
+        font-size: 30px;
+    }
+    .login-container__email, .login-container__password{
+        width: 70vw;
+    }
+    .login-container__submit-btn{
+        width: 200px;
+    }
+}
+
+@media screen and (max-height:650px){
+    .login-container{
+        height: 350px;
+    }
+    .login-container__p{
+        font-size: 25px;
+    }
+    .login-container__label{
+        font-size: 15px;
+    }
+    .login-container__a-forgot-password{
+        font-size: 12px;
+    }
+    .login-container__submit-btn{
+        margin-top: 10px;
+    }
+}

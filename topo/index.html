@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topito Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="box-shadow-hidden">
+        <div class="container-score">
+            <input type="button" value="Start" class="start-button">
+            <input type="button" value="Change difficulty ˂˃" class="change-difficulty-button">
+            <h1 class="score"></h1>
+            <h1 class="score-menu"></h1>
+        </div>
+        <div class="container-difficulty">
+            <h1 class="difficulty-selector-title">Choose difficulty</h1>
+            <input type="button" value="Easy" class="easy-difficulty-button">
+            <input type="button" value="Medium" class="medium-difficulty-button">
+            <input type="button" value="Hard" class="hard-difficulty-button">
+        </div>
+        <div class="container-topo-visible">
+            <div class="container-topo-hidden">
+                <img src="topo.png" class="topo">
+            </div>
+            <img src="fondoMenu.png" class="menu-topo">
+        </div>
+        <div class="container-counter">
+            <img src="topo.png" class="counter-img">
+            <p class="counter"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
